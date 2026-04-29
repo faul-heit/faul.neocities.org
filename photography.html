@@ -1,0 +1,83 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<link href="style.css" rel="stylesheet" type="text/css">
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<meta name="viewport" content="width=device-width, initial-scale=0.1">
+	<link href='https://fonts.googleapis.com/css2?family=Sawarabi+Mincho&display=swap' rel="stylesheet">
+	<link href='https://fonts.googleapis.com/css2?family=Courier+Prime&display=swap' rel="stylesheet">
+	<link href='https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap' rel="stylesheet">
+</head>
+<body class="page">
+
+	<h1>photographs</h1>
+  <i>8/2/26,  00:43, 土</i>
+
+  <p>
+	maybe it was cuz i've always had cheap phones with bad cameras, but for a while i wanted i proper camera. plus it felt cool to own a device that was meant just for that 
+	purpose. so after getting a new job with good pay i decided to pull the trigger and get one as a self present for xmas. of course my first instinct was to look for a digital
+	camera, and was instantly shocked as to how expensive they were. 
+  </p>
+<p>
+	not sure how, but in doing research i found out about film cameras, which was one of the things i guess i knew existed if you were to ask me, but i dont think they would've ever 
+	crossed my mind let alone assume ppl would still be using them. i did always liked the film/vintage aesthetic, so i that combined with the fact that they were cheaper sealed 
+	the deal for me. of course film is pay 2 play, but i reasoned that my picture taking would probably involve me going around town shooting at whatever interesting thing i came across,
+	which meant not a whole lot of pictures taken. basically, paying for a cheaper camera + film + development would be cheaper for me overall than getting just an expensive one
+</p>
+
+<p>
+	after getting into film, first i was just glad i stuck with the hobby, which was a concern of mine. specially bc how expesive my first camera was. but secondly i really got
+	into film. not only the aesthetic itself but also how shooting film works. you don't get to see what you've taken instantly, and there's little point in retaking unless 
+	you're absolutely sure you've fucked up. this would be a nightmare for a professional (which is the main reason they got replaced) but works wonders for me.  my picture taking
+	involves walking around town, truly looking around and appreciating the things i would normally not notice. and if they're cool enough, i'd shoot them. but that's secondary.
+	it's a great excuse to go out and enjoy a nice sunny day
+</p>
+
+<p>
+	with time, another thing ive learned to value about film is the fact that it's the full package. digital cameras are made to deliver sharp
+	and high quality raw material, flexible enough to be edited in post. film is from a time that wasn't possible, so it was made with the intention
+	of delivering a final product. it's weird cuz im all about tinkering with editing software (if i had to say my forte is video editing), but for 
+	some reason i don't feel like color correcting pictures at all, feels like cheating almost. maybe it's cuz i had this preconceived notion
+	that somehow photoshop = bad/fake. maybe it's the fakeness. there's something magical about capturing a moment the way it was in that moment.
+	idk, i'm still thinking about it. this all came from the fact that i got interested in digital cameras because a friend brought the kodak keychain
+	camera in one of our trips. not only that thing is oozing with personality, but also since it's digital it allowed us to take all the goofy pictures
+	you'd think twice about shooting in film. i thought about getting one but im not super convinced about it, specially about the image quality. 
+	bit of an oxymoron to not like the very thing that gives it it's charm tho no? but i digress
+</p>
+
+<p>
+	for more specific info and timeline of events, check <a href="cameras.html">cameras</a>
+
+</p>
+
+
+<br>
+	<div id="gallery"></div>
+
+<script>
+fetch("images.json")
+  .then(res => res.json())
+  .then(images => {
+    const gallery = document.getElementById("gallery");
+
+	images.forEach(file => {
+  const a = document.createElement("a");
+  a.href = file;
+  a.target = "_blank";
+  a.className = "item";
+
+  const img = document.createElement("img");
+  img.src = file;
+  img.className = "ublu";
+  img.loading = "lazy";
+
+  a.appendChild(img);
+  gallery.appendChild(a);
+});
+
+  });
+</script>
+		</body>
+</html>

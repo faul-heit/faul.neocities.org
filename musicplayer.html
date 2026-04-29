@@ -1,0 +1,55 @@
+<script src="musicplayer.js"></script>
+
+<html>
+<head>
+	<title></title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<meta name="viewport" content="width=device-width, initial-scale=0.1">
+</head>
+<body class="page">
+
+<div>
+    <!--<div class="window-header">MUSIC.EXE</div>-->
+
+    <!--<div class="window-content">-->
+      <h2>autoplays are also lame, but if you fancy some tunes:</h2>
+        <div style="position:relative; width:0px; height:0px; overflow:hidden; opacity:0;">
+            <div id="yt-player"></div>
+        </div>
+
+        <div class="player-ui">
+            <div class="playlist-container">
+                <span class="log-date">LIST:</span>
+                <select id="playlist-selector" class="retro-input"></select>
+            </div>
+
+            <div class="track-info">
+                <span class="log-date">SONG:</span>
+                <marquee id="song-title" class="log-line" scrollamount="4">Loading system...</marquee>
+            </div>
+
+            <div class="time-tracker info-table-2">
+                <span class="log-date">TIME:</span>
+                <span id="time-elapsed" style="color: #D4FC5E;">00:00</span> 
+                <span style="color: #EEE;">/</span> 
+                <span id="time-duration" style="color: #d7eccb;">00:00</span>
+            </div>
+
+            <div class="buttonmenu player-controls">
+                <a href="#" id="btn-prev" title="Previous Track">[&lt;&lt;]</a>
+                <a href="#" id="btn-play" title="Play">[&gt;]</a>
+                <a href="#" id="btn-pause" title="Pause">[||]</a>
+                <a href="#" id="btn-next" title="Next Track">[&gt;&gt;]</a>
+                <a href="#" id="btn-shuffle" title="Toggle Shuffle">[~]</a>
+            </div>
+
+            <div class="volume-control">
+                <span class="log-date">VOL:</span>
+                <input type="range" id="volume-slider" class="retro-slider" min="0" max="100" value="50">
+            </div>
+        </div>
+        
+</div>
+
+</body>
+</html>

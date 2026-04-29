@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+	<link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Yusei+Magic&display=swap" rel="stylesheet">
+	<link href='https://fonts.googleapis.com/css2?family=Sawarabi+Mincho&display=swap' rel="stylesheet">
+	<link href='https://fonts.googleapis.com/css2?family=Courier+Prime&display=swap' rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<script src="musicplayer.js"></script>
+</head>
+<body>
+	
+	<div class="left">
+		<div class="top">
+			<div class="window-header">Profile</div>
+
+			<div class="window-content">
+				<div class="sidebar">
+					<div class="title">lab of sloth</div>
+
+					<div class="subtitle Yusei-Magic">怠惰研究所</div>
+			
+					<div class="profile">
+						
+						<p class="profile-desc">
+							<img src="cactusicon.png"> 
+							<b><u>faulheit:</u></b> about me pages are lame; infer what you will of me from the contents on this site, it'll probably be more interesting than reality
+						</p>
+					</div>
+				</div>
+					<br>
+					<br>
+
+				<div class="buttonmenu">
+					<a href="home.html" target="content">home</a>
+					<a href="drawings.html" target="content">drawing</a>
+					<a href="about.html" target="content">books</a>
+					<a href="flikrgallery.html" target="content">photographs</a>
+					<a href="about.html" target="content">links out</a>
+					<a href="about.html" target="content">日本語</a>
+					<a href="haiku.html" target="content">haikus</a>
+					<a href="playlist.html" target="content">playlists</a>
+					<a href="videos.html" target="content">videos</a>
+					<a href="about.html" target="content">vidya</a>
+					<a href="music.html" target="content">music</a>
+					<a href="kanban.html" target="content">projects kanban</a>
+					<a href="cameras.html" target="content">cameras</a>
+					<a href="why.html" target="content">why?</a>
+					<a href="watches.html" target="content">watches</a>
+					<a href="musicplayer.html" target="content">my son</a>
+					<a href="neardtmi.html" target="content">near dt, mi</a>
+					<a href="changelog.html" target="content">changelog</a>
+				</div>
+		
+				<h2>autoplays are also lame, but if you fancy some tunes:</h2>
+				<div style="position:relative; width:0px; height:0px; overflow:hidden; opacity:0;">
+					<div id="yt-player"></div>
+				</div>
+		
+				<div class="player-ui">
+					<div class="playlist-container">
+						<span class="log-date">LIST:</span>
+						<select id="playlist-selector" class="retro-input"></select>
+					</div>
+		
+					<div class="track-info">
+						<span class="log-date">SONG:</span>
+						<marquee id="song-title" class="log-line" scrollamount="4">Loading system...</marquee>
+					</div>
+		
+					<div class="time-tracker info-table-2">
+						<span class="log-date">TIME:</span>
+						<span id="time-elapsed" style="color: #D4FC5E;">00:00</span> 
+						<span style="color: #EEE;">/</span> 
+						<span id="time-duration" style="color: #d7eccb;">00:00</span>
+					</div>
+		
+					<div class="buttonmenu player-controls">
+						<a href="#" id="btn-prev" title="Previous Track">[&lt;&lt;]</a>
+						<a href="#" id="btn-play-pause" title="Play/Pause">[&gt;]</a>
+						<a href="#" id="btn-next" title="Next Track">[&gt;&gt;]</a>
+						<a href="#" id="btn-shuffle" title="Toggle Shuffle">[~]</a>
+					</div>
+		
+					<div class="volume-control">
+						<span class="log-date">VOL:</span>
+						<input type="range" id="volume-slider" class="retro-slider" min="0" max="100" value="50">
+					</div>
+				</div>
+				
+				<p class="profile-desc" style="font-size: 10px"><i>credits: </i>layout stolen from <a href="https://teppyslayouts.neocities.org/">teppy's layouts</a>. inspired by <a href="https://ribo.zone/">ribo</a> and <a href="https://sadgrl.online/">sadgirl</a>. coding by me and chatgpt.</p>
+				
+			
+				
+				
+
+				
+<!--
+				<table class="info-table">
+					<tr>
+						<td>&#9984;</td>
+						<td>flickr</td>
+						<td><a target="_blank" href="">bunnysoot</a></td>
+					</tr>
+					<tr>
+						<td>&#10021;</td>
+						<td>youtube</td>
+						<td><a target="_blank" href="">@bunnysoot</a></td>
+					</tr>
+					<tr>
+						<td>&#10021;</td>
+						<td>deviantart</td>
+						<td><a target="_blank" href="">~bunnysoot</a></td>
+					</tr>
+				</table>
+				-->
+			</div>
+		</div>
+		<!--
+		<div class="bottom">
+			<div class="window-header">Daily Log</div>
+			<div class="window-content">
+				<div class="log">
+					<div class="log-date">[2025-03-24]</div>
+					<div class="log-line"> Watched Mickey 17</div>
+				</div>
+			</div>
+		</div>
+		-->
+
+		
+		
+	</div>
+	
+	<!--
+	<div class="left">
+		-->
+	<div class="bottom">
+		<div class="window-header">Change Log</div>
+
+		<div class="window-content">
+		<div class="chat chat-other">
+			<div class="avatar"></div>
+			<div class="message">
+				29/4/26 added music player, status cafe, guestbook, content <br>
+			</div>
+		</div>
+		<div class="chat chat-other">
+			<div class="avatar"></div>
+			<div class="message">
+				things to add: finish writing, make blog section, add music player
+			</div>
+		</div>
+		<div class="chat chat-other">
+			<div class="avatar"></div>
+			<div class="message">
+				first realease 5/4/26
+			</div>
+		</div>
+		<div class="chat chat-other">
+			<div class="avatar me-nico"></div>
+			<div class="message">
+				test
+			</div>
+		</div>
+		<div class="chat chat-other">
+			<div class="avatar me-nico"></div>
+			<div class="message">
+				this should scroll
+			</div>
+	</div>
+</div>
+</div>
+<!--
+</div>
+-->
+
+	
+	<div class="right">
+		<div class="window-header">Content</div>
+		<div class="window-content">
+			<iframe src="home.html" name="content"></iframe>
+		</div>
+	</div>
+</body>
+</html>
+
+
+
+

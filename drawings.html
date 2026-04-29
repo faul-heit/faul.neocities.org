@@ -1,0 +1,70 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<link href="style.css" rel="stylesheet" type="text/css">
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<meta name="viewport" content="width=device-width, initial-scale=0.1">
+	<link href='https://fonts.googleapis.com/css2?family=Sawarabi+Mincho&display=swap' rel="stylesheet">
+</head>
+<body class="page">
+  <h1>drawins, sketches</h1>
+  <i>8/2/26,  00:43, 土</i>
+
+  <p>drawing was one of my main hobbies for many years, but over time i've drawn less and less. i still believe my talents are visual, but not as an illustrator, which 
+    is what i was trying to become. its hard for me to draw something standalone, that won't serve a bigger purpose (a comic, an animation, etc).
+  </p>
+
+  <p>
+    in the beginning i exclusively used pencil. sketches were messy and i didn't want to erase building/helper lines. i guess i liked them too much, or that they showed i was
+    drawing the "proper" way. i started learning anatomy and my goal was to draw pretty anime girls. this created a clash between trying to draw cartoony weeb shit and "proper"
+    realistic proportions. i dont think i was ever truly able to nail that middle ground.
+  </p>
+  <p>
+    after a while i bought some fineliners and used them to ink over. i was hooked on crosshatching and the ability to express volume and value with only black
+    and white. i totally rejected colour, even after learning to draw digitally and having an arsenal of paintings stopped being a problem.
+  </p>
+
+  <p>
+    nowadays my main interest is, ironically, colour. even if i dont draw much, if at all
+  </p>
+
+  <p>
+    when i was actively trying to get better at drawing, i decided that i would make a video each year showcasing my progress:
+  </p>
+  <ul>
+		<li><a href="https://www.youtube.com/watch?v=IUomIAky7_w">2020</a></li>
+		<li><a href="https://www.youtube.com/watch?v=klAwCsQV5D8">2021</a></li>
+    <li><a href="https://www.youtube.com/watch?v=A2-54eWiygk">2022</a></li>
+    <li><a href="https://www.youtube.com/watch?v=oYFgahWNTug">2023</a></li>
+	</ul>
+<br>
+
+	<div id="gallery"></div>
+
+<script>
+fetch("drawings.json")
+  .then(res => res.json())
+  .then(images => {
+    const gallery = document.getElementById("gallery");
+
+	images.forEach(file => {
+  const a = document.createElement("a");
+  a.href = file;
+  a.target = "_blank";
+  a.className = "item";
+
+  const img = document.createElement("img");
+  img.src = file;
+  img.className = "ublu";
+  img.loading = "lazy";
+
+  a.appendChild(img);
+  gallery.appendChild(a);
+});
+
+  });
+</script>
+		</body>
+</html>

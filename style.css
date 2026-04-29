@@ -1,0 +1,498 @@
+body {
+	background-color: #1c2724;
+	color: #EEE;
+	/*font-family: "Roboto Mono", monospace;*/
+	font-family: "Courier Prime", monospace;
+	font-optical-sizing: auto;
+	font-weight: normal;
+	font-style: normal;
+	font-size: 12px; /*original 12 */
+	margin: 0;
+	padding: 0;
+	background-repeat: repeat-x;
+	overflow: hidden;
+}
+
+body, html {
+	position: relative;
+	padding: 0;
+	margin: 0;
+	height: 100%;
+	width: 100%;
+}
+
+.left {
+	position: absolute;
+	left: 0;
+	right: 80%;
+	top: 0px;
+	bottom: 0;
+
+}
+
+.right {
+	position: absolute;
+	left: 20%;
+	right: 0;
+	top: 0px;
+	bottom: 0;
+	border: 1px solid black;
+}
+
+.top {
+	border: 1px solid #000;
+	position: absolute;
+	left: 0;
+	right: 0;
+	top: 0;
+	bottom: 300px;
+}
+
+.bottom {
+	border: 1px solid #000;
+	position: absolute;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	height: 300px;
+}
+
+iframe {
+	width: 100%;
+	height: 100%;
+	border: 0;
+}
+
+.page img {
+	max-width: 100%;
+}
+
+.page {
+	color: #d7eccb;
+	padding: 12px;
+	box-sizing: border-box;
+	max-width: 2000px;
+	overflow: auto;
+}
+
+h1 {
+	color: #a0d58b;
+	font-size: 24px;
+	font-weight: bold;
+	font-family: "Josefin Sans";
+}
+
+h1:before {
+	content: '==========================================';
+	color: #627a77;
+	display: block;
+}
+
+h1:after {
+	content: '==========================================';
+	color: #627a77;
+	display: block;
+}
+
+h2 {
+	color: #a0d58b;
+	font-size: 12px;
+	font-weight: normal;
+	font-family: "Josefin Sans";
+}
+
+h2:after {
+	content: '------------------------------------------';
+	color: #627a77;
+	display: block;
+}
+
+a {
+	color: #e3abcd;
+}
+
+i {
+	color: #976BB5;
+}
+
+.window-header {
+	background: #000;
+	font-family: Arial, sans-serif;
+	padding: 6px;
+}
+
+.window-header:after {
+	content: "\25A2  \25A2";
+	opacity: 0.3;
+	font-size: 18px;
+	line-height: 14px;
+	float: right;
+}
+
+.window-content {
+	padding: 11px;
+	height: calc(100% - 50px);
+	overflow: auto;
+}
+
+/* This is for the iframe window - we don't want the outside window to scroll, only the iframe */
+.right .window-content {
+	padding: 0;
+	overflow: hidden;
+}
+
+.log-date {
+	color: #e3abcd;
+	display: inline-block;
+	margin-right: 24px;
+}
+
+.log-line {
+	color: #D4FC5E;
+	display: inline-block;
+}
+
+.info-table td:nth-child(1) {
+	color: #e3abcd;
+	padding-right: 12px;
+}
+
+.info-table td:nth-child(2) {
+	color: #d7eccb;
+	padding-right: 24px;
+}
+
+.info-table tr:nth-child(odd) td:nth-child(3) {
+	color: #C19C00;
+}
+
+.info-table tr:nth-child(even) td:nth-child(3) {
+	color: #A070C0;
+}
+
+.info-table-2 td:nth-child(1) {
+	color: #EEE;
+	padding-right: 12px;
+}
+
+.info-table-2 td:nth-child(2) {
+	color: #e3abcd;
+	margin-right: 24px;
+	background: #343A47;
+	display: inline-block;
+}
+
+.info-table-2 tr:nth-child(odd) td:nth-child(3) {
+	color: #D4FC5E;
+}
+
+.info-table-2 tr:nth-child(even) td:nth-child(3) {
+	color: #d7eccb;
+}
+
+::-webkit-scrollbar {
+	width: 10px;
+}
+
+::-webkit-scrollbar-track {
+	background: #080808; 
+}
+
+::-webkit-scrollbar-thumb {
+	background: #050505; 
+}
+
+::-webkit-scrollbar-thumb:hover {
+	background: #080808; 
+}
+
+.menu {
+	background: #e3abcd;
+	padding: 6px;
+}
+
+.menu a {
+	padding: 6px;
+	color: black;
+	text-decoration: none;
+	font-weight: bold;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+}
+.menu a:hover {
+	background: #303030;
+	color: #e3abcd;
+}
+
+.buttonmenu a {
+	border: 1px solid #e3abcd;
+	text-decoration: none;
+	padding: 4px;
+	display: inline-block;
+	margin-bottom: 6px;
+	font-family: "Roboto Mono", monospace;
+}
+
+.buttonmenu a:hover {
+	font-weight: bold;
+}
+
+
+.profile-img {
+	margin-right: 24px;
+}
+
+* {
+	scrollbar-width: thin; 
+}
+
+::-webkit-scrollbar {
+	width: 10px;
+}
+
+.chat {
+	margin: 12px 8px;
+	position: relative;
+	overflow: hidden;
+}
+
+.chat-me .message {
+	/* background-color: #C3C89B; */
+	border: 1px solid #d7eccb;
+	border-top: 8px solid #d7eccb;
+}
+
+.message {
+	/* background-color: #91B291; */
+	/* border-radius: 6px; */
+	padding: 12px 12px;
+	display: inline-block;
+	width: 15%;
+	margin-left: 10px;
+	box-sizing: border-box;
+	min-height: 60px;
+	position: relative;
+	z-index: 2;
+	border: 1px solid #d7eccb;
+}
+
+.avatar {
+	height: 40px;
+	width: 40px;
+	/* background-color: #364874; */
+	display: inline-block;
+	vertical-align: top;
+	border-radius: 4px;
+	border: 1px solid #a0d58b;
+	background-image: url('chatlogo.png');
+}
+
+.profile .profile-desc {
+	display: inline;
+}
+
+.profile {
+	border: 1px solid #d7eccb;
+	padding: 12px;
+	border-top: 8px solid #d7eccb;
+	min-height: 60px;
+}
+
+.title {
+	font-size: 32px;
+	font-weight: bold;
+	letter-spacing: 4px;
+	font-variant: small-caps;
+}
+
+.profile img {
+	border: 1px solid #d7eccb;
+	display: inline;
+	float: left;
+	margin-bottom: 12px;
+	margin-right: 6px;
+}
+
+.subtitle {
+	margin-bottom: 24px;
+	font-style: italic;
+}
+
+.Yusei-Magic {
+	font-family: 'Yusei Magic', sans-serif;
+	font-size: 20px;
+	text-align: right;
+}
+
+.haiku {
+    writing-mode: vertical-rl;
+    text-orientation: upright;
+	font-family: 'Sawarabi Mincho', sans-serif;
+	font-size: 70px;
+	color: #ffffff;
+}
+
+.center {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 100px;
+	width: 100%;
+  }
+
+
+
+/* gallery shit */
+
+#gallery {
+	columns: 260px;
+	column-gap: 12px;
+  }
+
+  .item {
+	width: 275px;
+	display: inline-block;
+	margin-bottom: 16px;
+	padding-bottom: 4px;
+  }
+
+  .ublu {
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+
+table.clear {
+	border:0px solid RGB(0,0,0,1);
+margin-left:auto; 
+margin-right:auto; 
+background-color: RGB(0,0,0,0);
+ }
+table.clearleft {
+	border:0px solid RGB(0,0,0,1);
+margin-left:0; 
+background-color: RGB(0,0,0,0);
+ }
+.invert{
+  transition-duration: 0.17s;
+ }
+.invert:hover{
+  filter: invert(100%);
+}
+img.middle{
+display: block;
+margin-left:auto; 
+margin-right:auto;
+}
+.ublu:hover{
+  transform: scale(1.075);
+} 
+.ublu{
+  transition-duration: .2s;
+} 
+.ublu2:hover{
+  transform: scale(1.05);
+  filter: blur(1.3px)
+} 
+.ublu2{
+  transition-duration: .2s;
+} 
+
+/* end gallery shit */
+
+  
+/* playlist gallery shit */
+#video-gallery {
+	columns: 500px;
+	column-gap: 12px;
+  }
+  
+  .video-item {
+	display: inline-block;
+	width: 100%;
+	margin-bottom: 12px;
+  }
+  
+  .video-item iframe {
+	width: 100%;
+	aspect-ratio: 16 / 9;
+	border: none;
+	display: block;
+  }
+  
+/* end video gallery shit */
+
+
+  /* --- MUSIC PLAYER STYLES --- */
+  .player-ui {
+    font-family: "Courier Prime", monospace;
+    margin-top: 10px;
+}
+
+.player-ui > div {
+    margin-bottom: 16px;
+}
+
+/* Strip modern styling from the dropdown */
+.retro-input {
+    background-color: #1c2724;
+    color: #e3abcd;
+    border: 1px solid #627a77;
+    font-family: "Courier Prime", monospace;
+    font-size: 12px;
+    padding: 2px;
+    width: 60%;
+    outline: none;
+}
+
+.retro-input:focus {
+    border-color: #d7eccb;
+}
+
+/* Minimalist volume slider */
+.retro-slider {
+    -webkit-appearance: none;
+    width: 60%;
+    background: transparent;
+    vertical-align: middle;
+}
+
+.retro-slider:focus {
+    outline: none;
+}
+
+/* Slider Track */
+.retro-slider::-webkit-slider-runnable-track {
+    width: 100%;
+    height: 4px;
+    cursor: pointer;
+    background: #627a77;
+    border: 1px solid #000;
+}
+
+/* Slider Thumb (The drag handle) */
+.retro-slider::-webkit-slider-thumb {
+    border: 1px solid #1c2724;
+    height: 12px;
+    width: 8px;
+    background: #e3abcd;
+    cursor: pointer;
+    -webkit-appearance: none;
+    margin-top: -5px; /* Aligns thumb with track */
+}
+
+/* Hover effects for player buttons */
+.player-controls a {
+    margin-right: 4px;
+    width: 24px;
+    text-align: center;
+}
+
+/* Override log-line marquee width */
+#song-title {
+    width: 60%;
+    vertical-align: middle;
+    display: inline-block;
+}
+
+/*end music player stuff*/
