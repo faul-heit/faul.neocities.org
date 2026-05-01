@@ -1,0 +1,19 @@
+[
+  {
+    "id": 1,
+    "date": "Apr 30, 2026 4:12 PM",
+    "username": "Admin",
+    "avatar": "profile.png",
+    "stats": "Offline<br>Joined: Jan 2026<br>Posts: 42",
+    "content": "Testing the creation of a new retro-styled website. I'm building it entirely from scratch using HTML, CSS, and vanilla JS. <br><br>The aesthetic is meant to be a blend of early 2000s forums and a terminal interface."
+  },
+  {
+    "id": 2,
+    "date": "May 1, 2026 10:45 AM",
+    "username": "Admin",
+    "avatar": "profile.png",
+    "stats": "Offline<br>Joined: Jan 2026<br>Posts: 42",
+    "content": "<h1>Update: Music Player</h1>I finally got the YouTube API working inside the 1x1 invisible iframe! <br><br>It took some tinkering to figure out the autoplay restrictions, but changing the load state fixed the random background playing. <div class=\"post-quote\">It works beautifully now, just need to figure out the forum layout.</div> Next step is organizing my old writings into this new format."
+  }
+]
+

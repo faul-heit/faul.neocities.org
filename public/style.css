@@ -298,6 +298,20 @@ i {
 	min-height: 60px;
 }
 
+.forum-border {
+    border: 1px solid #627a77;
+	/* padding: 12px;*/
+	/* border-top: 20px solid #627a77; */
+	min-height: 60px;
+}
+
+.forum-header {
+	background-color: #627a77;
+	color: white;
+	font-size: 18px;
+	padding: 5px;
+}
+
 .title {
 	font-size: 32px;
 	font-weight: bold;
@@ -496,3 +510,229 @@ margin-right:auto;
 }
 
 /*end music player stuff*/
+
+/*start forum shit*/
+/* --- FORUM INDEX (GENERAL PANEL) --- */
+.forum-section {
+	border: 1px solid #627a77;
+	margin-bottom: 24px;
+	background: #1c2724;
+}
+
+.forum-section-header {
+	background: #343A47;
+	color: #e3abcd;
+	padding: 6px 12px;
+	font-weight: bold;
+	font-family: Arial, sans-serif;
+	letter-spacing: 1px;
+	border-bottom: 1px solid #627a77;
+}
+
+.forum-row {
+	display: flex;
+	padding: 12px;
+	border-bottom: 1px dotted #627a77;
+}
+
+.forum-row:last-child {
+	border-bottom: none;
+}
+
+.forum-icon {
+	width: 40px;
+	color: #D4FC5E;
+	font-size: 16px;
+	text-align: center;
+}
+
+.forum-info {
+	flex-grow: 1;
+}
+
+.forum-title {
+	font-weight: bold;
+	color: #a0d58b;
+	font-size: 14px;
+	text-decoration: none;
+	display: block;
+	margin-bottom: 4px;
+}
+
+.forum-title:hover {
+	color: #e3abcd;
+}
+
+.forum-desc {
+	color: #d7eccb;
+	font-size: 11px;
+}
+
+.forum-latest {
+	width: 200px;
+	text-align: right;
+	font-size: 11px;
+	color: #a0d58b;
+	border-left: 1px dotted #627a77;
+	padding-left: 12px;
+}
+
+.forum-latest a {
+	color: #EEE;
+	text-decoration: none;
+}
+
+.forum-latest a:hover {
+	text-decoration: underline;
+}
+
+/* --- FORUM POST (MESSAGE LAYOUT) --- */
+.forum-post {
+	border: 1px solid #627a77;
+	margin-bottom: 16px;
+}
+
+.post-header {
+	background: #343A47;
+	padding: 4px 12px;
+	display: flex;
+	justify-content: space-between;
+	border-bottom: 1px solid #627a77;
+	color: #d7eccb;
+	font-size: 11px;
+}
+
+.post-body-container {
+	display: flex;
+}
+
+.post-sidebar {
+	width: 140px;
+	flex-shrink: 0;
+	padding: 12px;
+	border-right: 1px dotted #627a77;
+	text-align: left;
+}
+
+.post-username {
+	color: #e3abcd;
+	font-weight: bold;
+	font-size: 14px;
+	display: block;
+	margin-bottom: 8px;
+}
+
+.post-avatar {
+	width: 100px;
+	height: auto;
+	border: 1px solid #a0d58b;
+	margin-bottom: 8px;
+	display: block;
+}
+
+.post-stats {
+	color: #d7eccb;
+	font-size: 10px;
+	line-height: 1.4;
+}
+
+.post-content {
+	padding: 16px;
+	flex-grow: 1;
+	min-width: 0;
+	overflow-wrap: break-word;
+	color: #EEE;
+	line-height: 1.5;
+}
+
+/* Optional: Blockquote styling for replies */
+.post-quote {
+	border-left: 2px solid #D4FC5E;
+	background: #25332f;
+	padding: 8px;
+	margin: 12px 0;
+	color: #a0d58b;
+	font-style: italic;
+}
+
+/* --- FORUM TOPICS LIST --- */
+.topics-section {
+	border: 1px solid #627a77;
+	margin-bottom: 24px;
+	background: #1c2724;
+}
+
+.topics-header {
+	background: #343A47;
+	color: #d7eccb;
+	padding: 6px 12px;
+	font-weight: bold;
+	display: flex;
+	border-bottom: 1px solid #627a77;
+	font-size: 12px;
+}
+
+/* Define column widths for the header and rows */
+.col-icon { width: 30px; text-align: center; }
+.col-main { flex-grow: 1; padding-right: 16px; }
+.col-replies { width: 80px; text-align: center; }
+.col-lastpost { width: 150px; text-align: right; }
+
+.topic-row {
+	display: flex;
+	padding: 8px 12px;
+	border-bottom: 1px dotted #627a77;
+	align-items: center;
+}
+
+.topic-row:last-child {
+	border-bottom: none;
+}
+
+.topic-icon {
+	color: #D4FC5E;
+	font-family: "Courier Prime", monospace;
+}
+
+.topic-title-link {
+	color: #e3abcd;
+	font-weight: bold;
+	text-decoration: none;
+	font-size: 14px;
+	display: block;
+	margin-bottom: 2px;
+}
+
+.topic-title-link:hover {
+	text-decoration: underline;
+	color: #a0d58b;
+}
+
+.topic-meta {
+	color: #627a77;
+	font-size: 11px;
+}
+
+.topic-meta .author {
+	color: #976BB5;
+}
+
+.topic-replies {
+	color: #EEE;
+	font-size: 12px;
+}
+
+.topic-lastpost-data {
+	font-size: 11px;
+	color: #d7eccb;
+}
+
+.topic-lastpost-data a {
+	color: #a0d58b;
+	text-decoration: none;
+}
+
+.topic-lastpost-data a:hover {
+	text-decoration: underline;
+}
+/*end forum shit*/
