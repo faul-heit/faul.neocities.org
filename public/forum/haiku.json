@@ -1,0 +1,39 @@
+[
+  {
+    "id": 1,
+    "date": "Apr 30, 2026 4:12 PM",
+    "username": "Admin",
+    "avatar": "profile.png",
+    "stats": "Offline<br>Joined: Jan 2026<br>Posts: 42",
+    "content": "<div class='haiku'>白い雲 <br>目の前に小 <br>雨の味</div>"},
+  {
+    "id": 2,
+    "date": "May 1, 2026 10:45 AM",
+    "username": "Admin",
+    "avatar": "profile.png",
+    "stats": "Offline<br>Joined: Jan 2026<br>Posts: 42",
+    "content": "<div class='haiku'>黒い空 <br>世界の終わり <br>取り掛かる</div>"},
+  {
+    "id": 3,
+    "date": "May 1, 2026 10:45 AM",
+    "username": "Admin",
+    "avatar": "profile.png",
+    "stats": "Offline<br>Joined: Jan 2026<br>Posts: 42",
+    "content": "<div class='haiku'>孤独死は <br>茜ばかりを <br>涙する</div>"},
+  {
+    "id": 4,
+    "date": "May 1, 2026 10:45 AM",
+    "username": "Admin",
+    "avatar": "profile.png",
+    "stats": "Offline<br>Joined: Jan 2026<br>Posts: 42",
+    "content": "<div class='haiku'>女子の目が <br>あの青空に <br>憧れた</div>"},
+  {
+    "id": 4,
+    "date": "May 1, 2026 10:45 AM",
+    "username": "Admin",
+    "avatar": "profile.png",
+    "stats": "Offline<br>Joined: Jan 2026<br>Posts: 42",
+    "content": "<div class='haiku'>また君に <br>永遠へ飛べば <br>会えますか</div>"}
+
+]
+
