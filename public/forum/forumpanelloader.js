@@ -7,7 +7,7 @@ async function loadLatestDevlogs() {
         const jsonFileName = container.getAttribute('data-json');
 
         if (!jsonFileName) {
-            container.innerHTML = '<div style="color:#e3abcd;">ERR: NO JSON FILE</div>';
+            container.innerHTML = '<div style="color:#e3abcd;">NO POSTS</div>';
             return;
         }
 

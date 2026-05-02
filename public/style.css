@@ -632,7 +632,7 @@ margin-right:auto;
 }
 
 .post-stats {
-	color: #d7eccb;
+	color: #EEE;
 	font-size: 10px;
 	line-height: 1.4;
 }
@@ -642,7 +642,8 @@ margin-right:auto;
 	flex-grow: 1;
 	min-width: 0;
 	overflow-wrap: break-word;
-	color: #EEE;
+	/* color: #EEE; */
+	color: #d7eccb;
 	line-height: 1.5;
 }
 
