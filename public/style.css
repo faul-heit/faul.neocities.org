@@ -738,3 +738,19 @@ margin-right:auto;
 	text-decoration: underline;
 }
 /*end forum shit*/
+
+/* my music gallery shit */
+
+.soundcloud-grid {
+	display: grid;
+	grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+	gap: 16px;
+  }
+  
+  .soundcloud-grid iframe {
+	width: 100%;
+	height: 400px; /* can lower this value to shrink each element */
+	border: none;
+  }
+
+  /* end my music gallery shit */
