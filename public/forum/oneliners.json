@@ -3,7 +3,7 @@
     "id": 1,
     "date": "06/03/26",
     "username": "Admin",
-    "avatar": "profile.png",
+    "avatar": "../forumicon.png",
     "stats": "Offline<br>Joined: Jan 2026<br>Posts: 42",
     "content": "crazy that on the verge of death we can only manage to talk about banality. Maybe thats the point of it all <br> <i>i've no idea why i wrote this on my bday, i had a great day</i>"
   },
@@ -11,7 +11,7 @@
     "id": 2,
     "date": "14/11/23",
     "username": "Admin",
-    "avatar": "profile.png",
+    "avatar": "../forumicon.png",
     "stats": "Offline<br>Joined: Jan 2026<br>Posts: 42",
     "content": "at stupidities lane"
   },
@@ -19,7 +19,7 @@
     "id": 3,
     "date": "08/04/26",
     "username": "Admin",
-    "avatar": "profile.png",
+    "avatar": "../forumicon.png",
     "stats": "Offline<br>Joined: Jan 2026<br>Posts: 42",
     "content": "I might like me my cute anime girls but that doesnt mean i cant be a functional member of society"
   },
@@ -27,7 +27,7 @@
     "id": 4,
     "date": "10/03/26",
     "username": "Admin",
-    "avatar": "profile.png",
+    "avatar": "../forumicon.png",
     "stats": "Offline<br>Joined: Jan 2026<br>Posts: 42",
     "content": "en el arrabal era de purreta"
   }
