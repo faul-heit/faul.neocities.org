@@ -754,3 +754,19 @@ margin-right:auto;
   }
 
   /* end my music gallery shit */
+
+  /* images on posts shit */
+
+  figure {
+	display: table;
+	float: right;
+	width: 200px;
+    padding: 0px;
+  }
+  
+  figcaption {
+	display: table-caption;
+	caption-side: bottom;
+	text-align: center;
+  }
+ /*end images on posts shit */
