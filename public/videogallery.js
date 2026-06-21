@@ -1,11 +1,12 @@
 const videos = [
+    "mz9r1qRwPas",
     "LRGjF36XPBs",
     "lWUHlvHIEwo",
     "dXjx9ttTEV8",
     "LlpFLviKa1k",
     "l18oPFS_nlM",
     "MjbLNLY4RiQ",
-    "pYnCMeLBGT0",
+    "pYnCMeLBGT0"
   ];
   
   const gallery = document.getElementById("video-gallery");
