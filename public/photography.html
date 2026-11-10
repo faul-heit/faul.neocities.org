@@ -56,28 +56,28 @@
 <br>
 	<div id="gallery"></div>
 
-<script>
-fetch("images.json")
-  .then(res => res.json())
-  .then(images => {
-    const gallery = document.getElementById("gallery");
-
-	images.forEach(file => {
-  const a = document.createElement("a");
-  a.href = file;
-  a.target = "_blank";
-  a.className = "item";
-
-  const img = document.createElement("img");
-  img.src = file;
-  img.className = "ublu";
-  img.loading = "lazy";
-
-  a.appendChild(img);
-  gallery.appendChild(a);
-});
-
-  });
-</script>
+	<script>
+		fetch("images.json")
+		  .then(res => res.json())
+		  .then(images => {
+			const gallery = document.getElementById("gallery");
+		
+			images.forEach(file => {
+		  const a = document.createElement("a");
+		  a.href = file;
+		  a.target = "_blank";
+		  a.className = "item";
+		
+		  const img = document.createElement("img");
+		  img.src = file;
+		  img.className = "ublu";
+		  img.loading = "lazy";
+		
+		  a.appendChild(img);
+		  gallery.appendChild(a);
+		});
+		
+		  });
+		</script>
 		</body>
 </html>
